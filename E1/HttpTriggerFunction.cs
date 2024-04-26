@@ -1,22 +1,22 @@
-using E1_AzureFunctions.Services;
+using E1.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
-namespace E1_AzureFunctions
+namespace E1
 {
-    public class GetAllStudentsFunction
+    public class HttpTriggerFunction
     {
-        private readonly ILogger<GetAllStudentsFunction> _logger;
+        private readonly ILogger<HttpTriggerFunction> _logger;
         private readonly IStudentService _studentService;
-        public GetAllStudentsFunction(ILogger<GetAllStudentsFunction> logger,IStudentService studentService)
+        public HttpTriggerFunction(ILogger<HttpTriggerFunction> logger, IStudentService studentService)
         {
             _logger = logger;
             _studentService = studentService;
         }
 
-        [Function("Function1")]
+        [Function("GetAllStudents")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");

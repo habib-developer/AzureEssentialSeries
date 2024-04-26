@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E1_AzureFunctions.Services
+namespace E1.Services
 {
     internal class StudentService : IStudentService
     {

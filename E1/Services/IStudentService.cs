@@ -1,5 +1,4 @@
-﻿
-namespace E1_AzureFunctions.Services
+﻿namespace E1.Services
 {
     public interface IStudentService
     {
