@@ -13,19 +13,7 @@
     "storage2": {
       "secretStore": "LocalSecretsFile",
       "type": "storage.emulator",
-      "connectionId": "dev",
-      "dynamicId": null
-    },
-    "storage3": {
-      "secretStore": "LocalSecretsFile",
-      "type": "storage.emulator",
       "connectionId": "dev:queue",
-      "dynamicId": null
-    },
-    "storage4": {
-      "secretStore": "LocalSecretsFile",
-      "type": "storage.emulator",
-      "connectionId": "dev:queue:blob",
       "dynamicId": null
     }
   }

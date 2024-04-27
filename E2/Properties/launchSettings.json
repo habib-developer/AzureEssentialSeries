@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "E1_AzureFunctions": {
+    "E2": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7238",
+      "commandLineArgs": "--port 7124",
       "launchBrowser": false
     }
   }
