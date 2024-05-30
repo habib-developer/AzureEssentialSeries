@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "E2": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7124",
-      "launchBrowser": false
-    }
-  }
-}
