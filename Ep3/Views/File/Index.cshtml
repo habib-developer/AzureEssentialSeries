@@ -1,0 +1,17 @@
+﻿@using Azure.Storage.Blobs.Models
+@model Azure.Pageable<BlobItem>
+
+    <table>
+        <tr>
+            <th>File Name</th><th>Version</th><th>Preview</th><th>Download</th>
+        </tr>
+@foreach(var item in Model)
+{
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.VersionId</td>
+        <td><a asp-action="Details" asp-route-blobName="@item.Name">Preview</a></td>
+        <td><a asp-action="Download" asp-route-blobName="@item.Name">Download</a></td>
+    </tr>
+}
+</table>
